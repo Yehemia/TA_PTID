@@ -1190,13 +1190,13 @@ input:checked + label .description{
 }
 .contact .heading{
     position: relative;
-    margin-bottom: 30vh;
+    margin-bottom: 20px;
 }
 .contact .content h2{
     font-size: 3em;
     color: #fff;
     font-weight: 500;
-    margin-bottom: 100vh;
+    margin-bottom: 20px;
 }
 
 .contain{
@@ -1419,10 +1419,10 @@ input[type="text"], input[type="email"], textarea, input[type="submit"] {
 
 @media (max-width: 991px){
     .contact{
-        padding: 50px;
+        padding: 25px;
     }
     .contact .heading{
-        padding: 50px;
+        padding: 20px;
     }
     .contain{
         flex-direction: column;
@@ -1432,13 +1432,23 @@ input[type="text"], input[type="email"], textarea, input[type="submit"] {
         width: 100%;
     }
     .contain .contactForm{
-        padding: 40px;
+        padding: 20px;
     }
     .contain .contactForm form{
-        padding: 10px;
+        padding: 20px;
     }
 }
 
+@media (max-width: 768px) {
+    .contact .content h2 {
+        font-size: 1.5em; /* Kurangi ukuran font */
+        margin-bottom: -10px; /* Kurangi jarak bawah */
+    }
+
+    .contact .heading {
+        margin-bottom: 350px; /* Sesuaikan margin */
+    }
+}
 .footer {
     position: relative;
     display: flex;
