@@ -12,30 +12,33 @@
 </head>
 <body>
 
-	<header class="header">
-		<a href="#home" class="logo">Yehemia<span>Gauand</span></a>
-		
-		<i class='bx bx-menu' id="menu-icon"></i>
-		<nav class="navbar">
-			<a href="#home" class="active">Home</a>
-			<a href="#about">About</a>
-			<a href="#resume">Resume</a>
-			<a href="#skills">Skills</a>
-			<a href="#hobbies">Hobbies</a>
-			<a href="#Favorite">Favorite</a>
-			<a href="#contact">Contact</a>
-		</nav>
+	<header>
+		<div class="navbar">
+			<div class="logo"><a href="#">YehemiaGauand</a></div>
+			<ul class="links">
+				<li><a href="#home">Home</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#resume">Resume</a></li>
+				<li><a href="#skills">Skills</a></li>
+				<li><a href="#hobbies">Hobbies</a></li>
+				<li><a href="#favorite">Favorites</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+			<div class="toggle_btn">
+				<i class="fa-solid fa-bars"></i>
+			</div>			
+		</div>
+
+		<div class="dropdown_menu open">
+			<li><a href="#home">Home</a></li>
+			<li><a href="#about">About</a></li>
+			<li><a href="#resume">Resume</a></li>
+			<li><a href="#skills">Skills</a></li>
+			<li><a href="#hobbies">Hobbies</a></li>
+			<li><a href="#favorite">Favorites</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</div>
 	</header>
-
-	<div class="bars-animation">
-		<div class="bar" style="--i:6"></div>
-		<div class="bar" style="--i:5"></div>
-		<div class="bar" style="--i:4"></div>
-		<div class="bar" style="--i:3"></div>
-		<div class="bar" style="--i:2"></div>
-		<div class="bar" style="--i:1"></div>
-	</div>
-
 	<section class="home" id="home">
 		<div class="home-content" data-aos="fade-in">
 			<h1>Hi, i'm <span>Gwann</span></h1>
@@ -45,10 +48,10 @@
 			khususnya dalam bidang Back End Developer.</p>
 
 			<div class="social-icons">
-				<a href="#"><i class='bx bxl-discord-alt'></i></a>
-				<a href="#"><i class='bx bxl-instagram'></i></a>
-				<a href="#"><i class='bx bxl-github'></i></a>
-				<a href="#"><i class='bx bxl-tiktok'></i></a>
+				<a href="https://discord.gg/sephUP7X"><i class='bx bxl-discord-alt'></i></a>
+				<a href="https://www.instagram.com/yh.wann?igsh=MW1jcXFrZG5vcDQyYw=="><i class='bx bxl-instagram'></i></a>
+				<a href="https://github.com/Yehemia"><i class='bx bxl-github'></i></a>
+				<a href="https://www.tiktok.com/@jetsixxz?_t=8rWg00rh6f9&_r=1"><i class='bx bxl-tiktok'></i></a>
 			</div>
 			<a href="#about" class="btn-box" type="button">More About Me</a>
 
@@ -263,12 +266,11 @@
 		</div>
 	</section>
 
-	<section class="favorites" id="Favorite">
+	<section class="favorites" id="favorite" data-aos="fade-down">
 		<h2>My <span class="highlight">Favorites</span></h2>
-		
-		<div class="favorites-container">
+		<div class="favorites-container" data-aos="zoom-in-up">
 			<!-- Spotify Favorites -->
-			<div class="favorite-card">
+			<div class="favorite-card" data-aos="zoom-in-down">
 				<div class="card-header">
 					<i class="fab fa-spotify"></i>
 					<h3>Favorite Songs</h3>
@@ -299,65 +301,231 @@
 					</div>	
 
 					<div class="song-item">
-
+						<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/6dOtVTDdiauQNBQEDOtlAB?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 					</div>
 
 					<div class="song-item">
-
+						<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/7zRTw6GCjbxsNWZK37G87u?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 					</div>
 				</div>
 			</div>
 
 			<!-- Comics Favorites -->
-			<div class="favorite-card">
+			<div class="favorite-card" data-aos="zoom-in-up">
 				<div class="card-header">
 					<i class="fas fa-book-open"></i>
 					<h3>Favorite Comics</h3>
 				</div>
 				<div class="card-content">
 					<div class="comic-item">
-						<img src="path/to/comic-cover1.jpg" alt="Comic Cover">
-						<h4>Comic Title 1</h4>
-						<p>Author Name</p>
+						<img src="comic/orv.jpg" alt="Comic Cover">
+						<div class="text-cont">
+							<h4>Omniscient Reader's Viewpoint</h4>
+							<p>Sing Shong</p>
+						</div>
 					</div>
 					<div class="comic-item">
-						<img src="path/to/comic-cover2.jpg" alt="Comic Cover">
-						<h4>Comic Title 2</h4>
-						<p>Author Name</p>
+						<img src="comic/academy.jpg" alt="Comic Cover">
+						<div class="text-cont">
+							<h4>The Academy's Genius Swordsman</h4>
+							<p>C.H, SeoGwando</p>
+						</div>
 					</div>
-					<!-- Add more comics as needed -->
+					<div class="comic-item">
+						<img src="comic/tbate.jpg" alt="Comic Cover">
+						<div class="text-cont">
+							<h4>The Beginning After The End</h4>
+							<p>Fuyuki23</p>
+						</div>
+					</div>
+					<div class="comic-item">
+						<img src="comic/solo.jpg" alt="Comic Cover">
+						<div class="text-cont">
+							<h4>Solo Leveling</h4>
+							<p>Chugong</p>
+						</div>
+					</div>
+					<div class="comic-item">
+						<img src="comic/swordmaster.jpg" alt="Comic Cover">
+						<div class="text-cont">
+							<h4>Swordmaster's Youngest Son</h4>
+							<p>Lee Je-Won</p>
+						</div>
+					</div>
+					<div class="comic-item">
+						<img src="comic/btth.jpg" alt="Comic Cover">
+						<div class="text-cont">
+							<h4>Battle Through the Heavens</h4>
+							<p>Tian Can Tu Dou, Ren Xiang, Joe</p>
+						</div>
+					</div>
 				</div>
 			</div>
 
 			<!-- Anime Favorites -->
-			<div class="favorite-card">
+			<div class="favorite-card" data-aos="zoom-in-down">
 				<div class="card-header">
 					<i class="fas fa-tv"></i>
 					<h3>Favorite Anime</h3>
 				</div>
 				<div class="card-content">
 					<div class="anime-item">
-						<img src="path/to/anime-cover1.jpg" alt="Anime Cover">
-						<h4>Anime Title 1</h4>
-						<p>Studio Name</p>
+						<img src="anime/jjk.jpg" alt="Anime Cover">
+						<div class="text-cont">
+							<h4>Jujutsu Kaisen</h4>
+							<p>Gege Akutami, Ballad Kitaguni</p>
+						</div>
 					</div>
 					<div class="anime-item">
-						<img src="path/to/anime-cover2.jpg" alt="Anime Cover">
-						<h4>Anime Title 2</h4>
-						<p>Studio Name</p>
+						<img src="anime/cover.jpg" alt="Anime Cover">
+						<div class="text-cont">
+							<h4>Black Clover</h4>
+							<p>Yuki Tabata</p>
+						</div>
 					</div>
-					<!-- Add more anime as needed -->
+					<div class="anime-item">
+						<img src="anime/G_449_.jpg" alt="Anime Cover">
+						<div class="text-cont">
+							<h4>Kimetsu no Yaiba</h4>
+							<p>Koyoharu Gotouge</p>
+						</div>
+					</div>
+					<div class="anime-item">
+						<img src="anime/bog.jpg" alt="Anime Cover">
+						<div class="text-cont">
+							<h4>Berserk of Gluttony</h4>
+							<p>Isshiki Ichika</p>
+						</div>
+					</div>
+					<div class="anime-item">
+						<img src="anime/13490220.jpg" alt="Anime Cover">
+						<div class="text-cont">
+							<h4>Haikyu!!Fly High!!Volleyball!</h4>
+							<p>Haruichi Furudate</p>
+						</div>
+					</div>
+					<div class="anime-item">
+						<img src="anime/4852560.jpg" alt="Anime Cover">
+						<div class="text-cont">
+							<h4>Shingeki No Kyojin</h4>
+							<p>Hajime Isayama</p>
+						</div>
+					</div>
+					<div class="anime-item">
+						<img src="anime/tokyo.jpg" alt="Anime Cover">
+						<div class="text-cont">
+							<h4>Tokyo Ghoul</h4>
+							<p>Sui Ishida</p>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 
+	<section class="contact" id="contact">
+		<div class="heading">
+			<h2>Contact Me</h2>
+		</div>
+
+		<div class="contain">
+			<div class="contactInfo">
+				<div class="box">
+					<div class="icon"><b></b><i class="fas fa-map-marker-alt"></i></div>
+					<div class="text">
+						<h3>Address</h3>
+						<p>Jalan Natai Arahan No. 24,<br>Pangkalan Bun,<br>Kalimantan Tengah</p>
+					</div>
+				</div>
+				<div class="box">
+					<div class="icon"><b></b><i class="fas fa-phone"></i></div>
+					<div class="text">
+						<h3>Phone</h3>
+						<p>089636334240</p>
+					</div>
+				</div>
+				<div class="box">
+					<div class="icon"><b></b><i class="fas fa-envelope"></i></div>
+					<div class="text">
+						<h3>Email</h3>
+						<p>682024031@student.uksw.edu</p>
+					</div>
+				</div>
+				<h2 class="txt">Connect With Me</h2>
+				<ul class="sci">
+					<li><a href="#"><i class="fab fa-discord"></i></a></li>
+					<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+					<li><a href="#"><i class="fab fa-github"></i></a></li>
+					<li><a href="#"><i class="fab fa-tiktok"></i></a></li>
+				</ul>
+			</div>
+
+			<div class="contactForm">
+				<form>
+					<h2>Send Message</h2>
+					
+					<div class="inputBox">
+						<input type="text" name="" required="required">
+						<span>Full Name</span>
+					</div>
+					<div class="inputBox">
+						<input type="text" name="" required="required">
+						<span>Email</span>
+					</div>
+					<div class="inputBox">
+						<textarea required="required"></textarea>
+						<span>Type your Message...</span>
+					</div>
+					<div class="inputBox">
+						<input type="submit" value="Send">
+					</div>
+				</form>
+			</div>
+		</div>
+	</section>
+
+	<div class="footer">
+		<div class="waves">
+			<div class="wave" id="wave1"></div>
+			<div class="wave" id="wave2"></div>
+			<div class="wave" id="wave3"></div>
+			<div class="wave" id="wave4"></div>
+		</div>
+		<ul class="social-ikon">
+			<li><a href="https://discord.gg/sephUP7X"><i class="fab fa-discord"></i></a></li>
+			<li><a href="https://www.instagram.com/yh.wann?igsh=MW1jcXFrZG5vcDQyYw=="><i class="fab fa-instagram"></i></a></li>
+			<li><a href="https://github.com/Yehemia"><i class="fab fa-github"></i></a></li>
+			<li><a href="https://www.tiktok.com/@jetsixxz?_t=8rWg00rh6f9&_r=1"><i class="fab fa-tiktok"></i></a></li>
+		</ul>
+		<ul class="menu">
+			<li>
+				<a href="#home">Home</a>
+				<a href="#about">About</a>
+				<a href="#resume">Resume</a>
+				<a href="#skills">Skills</a>
+				<a href="#hobbies">Hobbies</a>
+				<a href="#favorite">Favorites</a>
+				<a href="#contact">Contact</a>
+			</li>
+		</ul>
+		<p>Created <i class="fa-solid fa-ghost"></i> with by @Gwann <br> Copyright © 2024 Pengantar Teknologi Informasi</p>
+	</div>
+
 	<script src="script.js"></script>
 	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 	<script>
+		const toggleBtn = document.querySelector(".toggle_btn")
+		const toggleBtnIcon = document.querySelector(".toggle_btn i")
+		const dropDownMenu = document.querySelector(".dropdown_menu")
+
+		toggleBtn.onclick = function(){
+			dropDownMenu.classList.toggle("open")
+			const isOpen = dropDownMenu.classList.contains("open")
+			toggleBtnIcon.classList = isOpen ? "fa-solid fa-xmark" : "fa-solid fa-bars"
+		}
 		AOS.init({
-		  offset:300,
-		  duration:1400,
+			offset:300,
+			duration:1400,
 		});
 	</script>
 </body>

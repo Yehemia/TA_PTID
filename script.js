@@ -8,4 +8,8 @@ document.addEventListener("DOMContentLoaded", function() {
   })
 })
 
-  
+document.getElementById("contactForm").addEventListener("submit", function(event){
+  event.preventDefault(); // Prevent page refresh
+  alert("Thank you for contacting us!");
+});
+
